@@ -1,0 +1,147 @@
+.formacao {
+  background-color: #141414;
+  color: #fff;
+}
+
+.formacao .container {
+  padding: 120px;
+  position: relative;
+}
+
+.formacao .container::after {
+  content: "";
+  width: 130px;
+  height: 100px;
+  display: block;
+  background: url('../img/Deco.svg') no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formacao .subtitulo {
+  color: #000;
+}
+
+.formacao-texto {
+  font-size: 1.3rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: #fff;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.faculdade {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faculdade-titulo {
+  font-size: 0.875rem;
+  color: #a3a3a3;
+  margin-bottom: 4px;
+}
+
+.faculdade-curso {
+  font-size: 1.425rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.faculdade::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#fda800, #ffad0d);
+  position: absolute;
+  left: -4px;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+
+}
+
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -40px;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.cursos h3::before {
+  background: url('../img/tdesign_course.svg') no-repeat center;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.idiomas {
+  position: relative;
+}
+
+.idiomas h3::before {
+  background: url('../img/mdi_language.svg') no-repeat center;
+}
+
+@media (max-width: 800px) {
+  .formacao .container {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-container {
+    padding-top: 60px;
+  }
+
+  .formacao .subtitulo {
+    font-size: 3rem;
+    word-break: initial;
+    color: #a3a3a3;
+  }
+}

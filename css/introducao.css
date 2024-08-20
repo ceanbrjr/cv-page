@@ -1,0 +1,76 @@
+.introducao {
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  width: 130px;
+  height: 100px;
+  display: block;
+  background: url('../img/Deco.svg') no-repeat center;
+  position: absolute;
+  top: -16px;
+  left: -45px;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+
+  .introducao h1::before {
+    width: 80px;
+    top: -25px;
+    left: -30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    top: -10px;
+    left: 0px;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+    color: #525252;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .introducao h1 {
+    display: inline-block;
+  }
+  
+  .introducao img {
+    display: none;
+  }
+}
